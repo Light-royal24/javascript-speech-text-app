@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 10px 15px;
+    resize: none;
+    outline: none;
+    border: 1px solid #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: crimson;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: rgb(190, 14, 49);
+}
+
+.INSTRUCTION {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        max-width: 100%;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    textarea {
+        height: 57vh;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        color: crimson;
+        font-weight: 900;
+    }
+
+    .INSTRUCTION {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(247, 91, 35);
+        box-shadow: 0 5px 10px rgba(247, 91, 35, 0.1);
+        color: white;
+        border-radius: 8px;
+        margin: 10px 0 0 0;
+        padding: 10px;
+    }
+
+    .INSTRUCTION h2 {
+        width: 100%;
+        border-bottom: 1px solid white;
+        font-weight: 700;
+        margin: 5px 0;
+    }
+
+    .INSTRUCTION p {
+        color: white;
+        font-size: 1rem;
+        padding: 6px 0;
+    }
+
+    .INSTRUCTION span {
+        font-size: 0.7rem;
+        color: rgb(10, 1, 1);
+        font-weight: 700;
+    }
+}
